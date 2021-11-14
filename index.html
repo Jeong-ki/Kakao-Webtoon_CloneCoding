@@ -5,9 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='./style/reset.css'>
+  <link rel="stylesheet" href="./style/style.css">
   <title>kakao webtoon clone</title>
 </head>
 <body>
-  
+  <header>
+    <h1 class="blind">네비게이션 바</h1>
+    <section class="btn-func">
+      <button class="btn-left"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4NSAtNTQpIHRyYW5zbGF0ZSgwIDQ0KSB0cmFuc2xhdGUoMTggMTApIHRyYW5zbGF0ZSgyNjcpIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTQgMjBjMCAxLjEwNS0uODk1IDItMiAyLTEuMDU0IDAtMS45MTgtLjgxNi0xLjk5NS0xLjg1TDEwIDIwaDR6TTEyIDNjMy44NjYgMCA3IDIuODc4IDcgNi40Mjl2Ni41OThMMjEgMThIM2wyLTEuOTc0VjkuNDI5QzUgNS44NzkgOC4xMzQgMyAxMiAzem0wIDJDOS4zMDQgNSA3LjExNiA2LjkzNyA3LjAxMSA5LjM1MWwtLjAwNC4xODJ2Ni40Nkw3IDE2aDEwbC0uMDA2LS4wMDVWOS41MzNDMTYuOTk0IDcuMDM1IDE0Ljc2NCA1IDEyIDV6Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9IjIyIiBjeT0iMiIgcj0iMiIgZmlsbD0iI0ZGMzA0MiIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="알림"></button>
+      <div class="btn-right">
+        <button><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTEwIDNjMy44NjYgMCA3IDMuMTM0IDcgNyAwIDEuNTcyLS41MTggMy4wMjQtMS4zOTQgNC4xOTJsNS40NjUgNS40NjUtMS40MTQgMS40MTQtNS40NjYtNS40NjRDMTMuMDIzIDE2LjQ4MiAxMS41NzEgMTcgMTAgMTdjLTMuODY2IDAtNy0zLjEzNC03LTdzMy4xMzQtNyA3LTd6bTAgMmMtMi43NjEgMC01IDIuMjM5LTUgNXMyLjIzOSA1IDUgNSA1LTIuMjM5IDUtNS0yLjIzOS01LTUtNXoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzA3IC00NDgpIHRyYW5zbGF0ZSgxMDE5IDQzNCkgdHJhbnNsYXRlKDAgMSkgdHJhbnNsYXRlKDE4IDEwKSB0cmFuc2xhdGUoMjY3KSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="검색하기"></button>
+        <button><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik02IDZ2MTRINFY2aDJ6bTE0IDB2MTJoLTJWNmgyem0tNy0zdjEyaC0yVjNoMnoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMzMgLTU0KSB0cmFuc2xhdGUoMCA0NCkgdHJhbnNsYXRlKDE4IDEwKSB0cmFuc2xhdGUoMzE1KSIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="사이드 메뉴"></button>  
+      </div>
+    </section>
+    <ul>
+      <li>선물함</li>
+      <li>보관함</li>
+      <li>KAKAO WEBTOON</li>
+      <li>웹툰원작</li>
+      <li>소설원작</li>
+    </ul>
+    <section class="btn-category">
+      <button>추천</button>
+      <button>스페셜</button>
+    </section>
+  </header>
+  <main>
+    <ul class="list-webtoon">
+      <li class="item-webtoon">
+        <div class="txt-box"></div>
+        <div class="img-box"></div>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </main>
+  <footer>
+    <ul>
+      <li>사업자 정보</li>
+      <li>이용약관</li>
+      <li>개인정보처리방침</li>
+      <li>청소년 보호 정책</li>
+      <li>고객센터</li>
+      <li>사업자 정보</li>
+    </ul>
+    <p>© KAKAO WEBTOON</p>
+  </footer>
 </body>
 </html>
