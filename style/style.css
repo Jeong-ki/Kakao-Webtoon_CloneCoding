@@ -1,1 +1,83 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
+body {
+  background-color: black;
+  color: white;
+}
+
+/* header */
+header .btn-func {
+  display: flex;
+  justify-content: space-between;
+}
+header .btn-func button {
+  background-color: black;
+  border: none;
+  padding: 7px 10px;
+}
+
+header .list-cate ul{
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+header .toggle-cate {
+  display: flex;
+  justify-content: center;
+  padding-right: 33px;
+}
+header .toggle-cate ul{
+  display: flex;
+  justify-content: center;
+  width: 850px;
+  margin: 10px;
+}
+header .toggle-cate li {
+  font-size: 14px;
+  width: 45px;
+  height: 27px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+}
+header .toggle-cate li.on {
+  color: black;
+  background-color: white;
+}
+
+/* main */
+.list-webtoon .item-webtoon {
+  display: flex;
+  height: 417px;
+}
+.list-webtoon .item-webtoon .txt-box {
+  position: relative;
+  height: 100%;
+  width: 53vw;
+  background-color: blanchedalmond;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.list-webtoon .item-webtoon .img-box {
+  height: 100%;
+  width: 47vw;
+}
+.list-webtoon .item-webtoon .img-box::before {
+  content: "";
+  position: absolute;
+  left: 42%;
+  background-image: url("https://kr-a.kakaopagecdn.com/P/C/1395/bg/2x/59668f46-b43a-4e8d-b8ce-2da59d1a4d5b.jpg");
+  background-repeat: no-repeat;
+  background-size : cover;
+  height: 417px;
+  width: 200px;
+  background-color: red;
+  transform: translateX(0px) skew(-19deg);
+}
