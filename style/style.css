@@ -31,6 +31,7 @@ header .toggle-cate {
   display: flex;
   justify-content: center;
   padding-right: 33px;
+  margin-bottom: 10px;
 }
 header .toggle-cate ul{
   display: flex;
@@ -53,31 +54,154 @@ header .toggle-cate li.on {
 }
 
 /* main */
-.list-webtoon .item-webtoon {
+/* 홀수 */
+.list-webtoon .item-webtoon{
   display: flex;
   height: 417px;
-}
-.list-webtoon .item-webtoon .txt-box {
   position: relative;
+  flex-wrap: wrap;
+}
+.item-webtoon .left-box {
+  flex: 1;
+  transform: translateX(0px) skew(-20deg);
+  background-color:black;
+}
+.item-webtoon .left-box .txt-box {
+  position: absolute;
+  transform: skew(20deg);
+  right: -50px;
+  width: 300px;
   height: 100%;
-  width: 53vw;
-  background-color: blanchedalmond;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.item-webtoon .left-box .txt-box p {
+  font-size: 12px;
+  color: rgb(172, 172, 172)
+}
+.item-webtoon .left-box .txt-box span {
+  display: inline-block;
+  background-color: rgb(255, 48, 66);
+  border-radius: 15px;
+  padding: 4px 7px;
+  font-size: 13px;
+  margin-top: 17px;
+  margin-bottom: 26px;
+}
+.item-webtoon .left-box .txt-box h3 {
+  font-size: 45px;
+  margin-bottom: 14px;
+}
+.item-webtoon .left-box .txt-box strong {
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 200px;
+}
+.item-webtoon .middle-box {
+  position: absolute;
+  width: 400px;
+  height: 417px;
+  background-image: url(../img/city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index: -10;
+}
+.item-webtoon .right-box {
+  background-color: black;
+  flex: 1;
+  transform: translateX(4.29px) skew(-20deg);
+  margin-left: 170px;
+  z-index: -10;
+}
+.item-webtoon .right-box .human{
+  position: absolute;
+  transform: translateX(0px) skew(20deg);
+  left: -100px;
+  height: 450px;
+  width: 400px;
 }
 
-.list-webtoon .item-webtoon .img-box {
-  height: 100%;
-  width: 47vw;
+/* 짝수 */
+.item-webtoon .left-box2 {
+  flex: 1;
+  transform: translateX(4.29px) skew(20deg);
+  background-color:black;
 }
-.list-webtoon .item-webtoon .img-box::before {
-  content: "";
+.item-webtoon .left-box2 .txt-box2 {
   position: absolute;
-  left: 42%;
-  background-image: url("https://kr-a.kakaopagecdn.com/P/C/1395/bg/2x/59668f46-b43a-4e8d-b8ce-2da59d1a4d5b.jpg");
-  background-repeat: no-repeat;
-  background-size : cover;
+  transform: translateX(4.29px) skew(-20deg);
+  right: -50px;
+  width: 300px;
+  height: 100%;
+}
+.item-webtoon .left-box2 .txt-box2 p {
+  font-size: 12px;
+  color: rgb(172, 172, 172)
+}
+.item-webtoon .left-box2 .txt-box2 span {
+  display: inline-block;
+  background-color: rgb(255, 48, 66);
+  border-radius: 15px;
+  padding: 4px 7px;
+  font-size: 13px;
+  margin-top: 17px;
+  margin-bottom: 26px;
+}
+.item-webtoon .left-box2 .txt-box2 h3 {
+  font-size: 45px;
+  margin-bottom: 14px;
+}
+.item-webtoon .left-box2 .txt-box2 strong {
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 200px;
+}
+.item-webtoon .middle-box2 {
+  position: absolute;
+  width: 400px;
   height: 417px;
-  width: 200px;
-  background-color: red;
-  transform: translateX(0px) skew(-19deg);
+  background-image: url(../img/data.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index: -10;
+}
+.item-webtoon .right-box2 {
+  background-color: black;
+  flex: 1;
+  transform: translateX(4.29px) skew(20deg);
+  margin-left: 170px;
+  z-index: -10;
+}
+.item-webtoon .right-box2 .AI{
+  position: absolute;
+  transform: translateX(4.29px) skew(-20deg);
+  left: -200px;
+  height: 410px;
+  width: 410px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+footer ul {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.404);
+}
+footer ul li::after {
+  content: "|";
+  margin: 0 5px;
+}
+footer ul li:last-child::after {
+  content: "";
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.233);
 }
